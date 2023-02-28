@@ -10,7 +10,7 @@ function agregarHombres(){
             description: description
         }
         console.log(data)
-        fetch("https://jovenespdc.herokuapp.com/h-points/", {
+        fetch("https://backend-ipc-jov.onrender.com/h-points/", {
             method: 'POST',
             body: JSON.stringify(data),
             headers:{
