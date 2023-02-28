@@ -21,6 +21,8 @@ function agregarHombres(){
         }).then(res => res.json())
         .catch(error => console.error('Error:', error))
         .then(response => console.log('Success:', response));
+        document.getElementById("description").value="" 
+        document.getElementById("points").value="" 
     }
 
 }
@@ -48,6 +50,8 @@ function agregarMujeres(){
         }).then(res => res.json())
         .catch(error => console.error('Error:', error))
         .then(response => console.log('Success:', response));
+        document.getElementById("description").value="" 
+        document.getElementById("points").value="" 
     }
 
 }
