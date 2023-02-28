@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{font-family: 'DM Sans', sans-serif;}
+    </style>
+    <title>Home page</title>
+</head>
+<body>
+    <div class="container" style="background-color: rgb(42, 116, 165);">
+    <header>
+        <br>
+        <center>
+            <h5 style="color: white;">CONTROL DE SISTEMA DE PUNTOS</h4>
+            <br>
+        </center>
+    </header>
+        <br><br>
+        <div class="card" style="background-color: rgb(255, 255, 255);">
+            <div class="card-body">
+                <h4 class="card-title" style="color: gray;">Agregar o restar puntos</h4>
+                <hr style="background-color: black;">
+                <p class="card-text" style="color: gray;">Digite los puntos</p>
+                <input class="form-control" type="number" id="points">
+                <br>
+                <div class="form-group">
+                  <label for="" style="color: gray;">Escribe una descripción</label>
+                  <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
+                <br>
+                <center>
+                    <button type="button" class="btn btn-primary" onclick={agregarHombres()}>Añadir a Hombres</button>
+                    <br><br>
+                    <button type="button" class="btn btn-primary" onclick={agregarMujeres()}>Añadir a Mujeres</button>
+                </center>
+            </div>
+        </div>
+        <br><br><br><br>
+        <footer>
+            <center>
+                <h5 style="color: white;">Copiright NeonBlack 2023©</h4>
+                <br>
+            </center>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
