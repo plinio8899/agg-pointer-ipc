@@ -37,7 +37,7 @@ function agregarMujeres(){
             description: description
         }
         console.log(data)
-        fetch("https://jovenespdc.herokuapp.com/m-points/", {
+        fetch("https://backend-ipc-jov.onrender.com/m-points/", {
             method: 'POST',
             body: JSON.stringify(data),
             headers:{
